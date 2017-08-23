@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="myApp" ng-init="nums=[1,2,3,4,5,6,7,8,9,10];
+  digits = [2,3,4,5,6,7,8,9,10]">
+<div ng-controller="myCtrl">
+   <!--  <p>Write something in the input field:</p>
+    <input type="text" ng-blur="myFunc()" ng-model="myValue" />
+    <p>The input field has changed {{count}} times.</p> -->
+    <div class="container">
+    <table border="1">
+        <tr>
+            <th>0</th>
+            <th ng-repeat="x in nums">{{x}}</th>
+        </tr>
+        <tr ng-repeat="y in digits">
+            <td>{{y}}</td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[0]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[1]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[2]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[3]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[4]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[5]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[6]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[7]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[8]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+            <td><input type="number" class="{{red}}" data-id="{{y * nums[9]}}" ng-blur="myfunction1($event.target)" ng-dblclick="correct($event.target)"></td>
+        </tr>
+    </table>
+    </div>
+    <a class="btn-floating btn-large waves-effect waves-light red" ng-click="result()"><i class="material-icons">insert_comment</i><a>
+    <div class="chip" ng-show="score">
+        Score {{count}} <i class="close material-icons" ng-click="close()">close</i>
+    </div>
+
+        <div class="chip" ng-show="score">
+            Score {{count}} <i class="close material-icons" ng-click="close()">close</i>
+        </div>
+        <style ng-model="style">
+            .btn-floating{position: fixed!important;
+                bottom: 25px!important;
+                right: 25px!important;}
+            .chip{position: fixed!important;
+                bottom: 25px!important;
+                right: 100px!important;}
+            th, td{text-align:center; border: 1px solid gray;}
+            {{style}}
+        </style>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+<script>
+    angular.module('myApp', [])
+            .controller('myCtrl', ['$scope', function($scope) {
+                $scope.count = 0;
+                $scope.correct_val = 0;
+                /* $scope.myFunc = function() {
+                    $scope.count++;
+                }; */
+                $scope.result = function()
+                {
+                    $scope.score = true;
+                    $scope.style = ".wrong{color:red;}";
+                };
+                $scope.close = function()
+                {
+                    $scope.score = false;
+                };
+
+                $scope.myfunction1 = function(item)
+                {
+                    // alert(angular.element(item)[0].value);
+                    // alert(item.attributes['data-id'].value);
+                    if(angular.element(item)[0].value == item.attributes['data-id'].value)
+                    {
+                        $scope.count++;
+                    }
+                    else
+                    {
+                        item.attributes['class'].value = "wrong";
+                    }
+                };
+                $scope.score = false;
+
+                $scope.correct = function(val)
+                {
+                    alert(val.attributes['data-id'].value);
+                    $scope.correct_val = val.attributes['data-id'].value;
+                }
+
+            }]);
+</script>
+</body>
+</html>
