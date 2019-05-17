@@ -1,0 +1,17 @@
+<div class="container pt-3">
+    <h3 class="mb-0">Product List</h3>
+    <hr class="my-3">
+    <ul class="list-group mb-5">
+        <li class="list-group-item d-flex justify-content-between" ng-repeat="product in products">
+            <!-- <div>
+                <img src="{{product.productImage}}" alt="" class="img-fluid">
+            </div> -->
+
+            <div>
+                <h5>{{product.name}}</h5>
+                <span>Rs. {{product.price}}</span>
+            </div>
+            <button type="button" ng-click="deleteProduct(product._id)" class="btn btn-primary">Delete</button>
+        </li>
+    </ul>
+</div>
