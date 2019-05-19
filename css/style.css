@@ -44,6 +44,10 @@ section.blue-section .right-align {
   padding-top: 10px;
 }
 
+section.blue-section .balance-title {
+  margin: 0;
+}
+
 section.contacts img {
   margin: 0 auto;
   display: -webkit-box;
