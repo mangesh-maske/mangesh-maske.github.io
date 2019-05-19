@@ -28,8 +28,8 @@ section.blue-section .left-profile {
 }
 
 section.blue-section .left-profile .profile {
-  height: 32px;
-  width: 32px;
+  height: 35px;
+  width: 35px;
   border: 2px solid white;
   border-radius: 100%;
   overflow: hidden;
@@ -63,6 +63,10 @@ section.blue-section .left-icon {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+section.blue-section .left-icon a {
+  color: #ffffff;
 }
 
 section.blue-section .right-icon {
