@@ -5,9 +5,12 @@ $text-color:#424242;
 
 section{
     &.blue-section{
+        position: sticky;
+        top: 0;
         background-color: $primary-color;
         color:$white;
         padding:10px 0;
+
 
         .row{
             margin-bottom:0;
