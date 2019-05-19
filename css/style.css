@@ -11,6 +11,10 @@ section.blue-section .row {
   margin-bottom: 0;
 }
 
+section.blue-section .row.balance-row {
+  margin-bottom: 5px;
+}
+
 section.blue-section .left-profile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +51,31 @@ section.blue-section .right-align {
 section.blue-section .balance-title {
   margin: 0;
   font-size: 17px;
+}
+
+section.blue-section .left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section.blue-section .right-icon {
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 section.contacts img {
@@ -112,5 +141,6 @@ section.options.balance-options .list p span {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
