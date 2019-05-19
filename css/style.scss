@@ -46,6 +46,7 @@ section{
 
         .balance-title{
             margin:0;
+            font-size:17px;
         }
     }
 
@@ -86,6 +87,28 @@ section{
 
             
         }
+
+        &.balance-options{
+            .list{
+                padding: 25px 28px;
+
+                p{
+                    color: #000000;
+                    span{
+                        color: $text-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .footer-image{
+        position: sticky;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-0px);
+        width: 100%;
     }
 }
 

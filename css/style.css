@@ -46,6 +46,7 @@ section.blue-section .right-align {
 
 section.blue-section .balance-title {
   margin: 0;
+  font-size: 17px;
 }
 
 section.contacts img {
@@ -87,5 +88,27 @@ section.options .list p span {
   font-size: 13px;
   font-weight: 400;
   color: #737373;
+}
+
+section.options.balance-options .list {
+  padding: 25px 28px;
+}
+
+section.options.balance-options .list p {
+  color: #000000;
+}
+
+section.options.balance-options .list p span {
+  color: #424242;
+}
+
+section .footer-image {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
