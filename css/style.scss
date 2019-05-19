@@ -1,0 +1,52 @@
+$primary-color:#1a73e8;
+$primary-dark-color:#1967d2;
+$white:#ffffff;
+$text-color:#5f6368;
+
+section{
+    &.blue-section{
+        background-color: $primary-color;
+        color:$white;
+        padding:10px 0;
+
+        .row{
+            margin-bottom:0;
+        }
+
+        .left-profile{
+            display:flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .profile{
+                height: 32px;
+                width: 32px;
+                border: 2px solid white;
+                border-radius: 100%;
+                overflow: hidden;
+                margin-right:15px;
+
+            }
+
+            p{
+                margin:0;
+
+                &.name{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .right-align{
+            padding-top:10px;
+        }
+    }
+
+    &.contacts{
+        img{
+            margin: 0 auto;
+            display: flex;
+        }
+    }
+}
+

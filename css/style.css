@@ -1,0 +1,50 @@
+section.blue-section {
+  background-color: #1a73e8;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+section.blue-section .row {
+  margin-bottom: 0;
+}
+
+section.blue-section .left-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section.blue-section .left-profile .profile {
+  height: 32px;
+  width: 32px;
+  border: 2px solid white;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+section.blue-section .left-profile p {
+  margin: 0;
+}
+
+section.blue-section .left-profile p.name {
+  font-weight: 600;
+}
+
+section.blue-section .right-align {
+  padding-top: 10px;
+}
+
+section.contacts img {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
