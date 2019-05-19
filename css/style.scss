@@ -55,8 +55,8 @@ section{
             align-items: center;
             justify-content: flex-start;
             border-top:1px solid #e8e8e8;
-            padding:25px 0;
-            font-size:17px;
+            padding:25px 20px;
+            font-size:14px;
             width:100%;
             color:$text-color;
             font-weight:500;
@@ -73,6 +73,7 @@ section{
                     display: block;
                     font-size: 13px;
                     font-weight: 400;
+                    color:#737373;
                 }
             }
 

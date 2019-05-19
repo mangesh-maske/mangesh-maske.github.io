@@ -59,8 +59,8 @@ section.options .list {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-top: 1px solid #e8e8e8;
-  padding: 25px 0;
-  font-size: 17px;
+  padding: 25px 20px;
+  font-size: 14px;
   width: 100%;
   color: #424242;
   font-weight: 500;
@@ -79,5 +79,6 @@ section.options .list p span {
   display: block;
   font-size: 13px;
   font-weight: 400;
+  color: #737373;
 }
 /*# sourceMappingURL=style.css.map */
