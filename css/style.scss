@@ -1,7 +1,7 @@
 $primary-color:#1a73e8;
 $primary-dark-color:#1967d2;
 $white:#ffffff;
-$text-color:#5f6368;
+$text-color:#424242;
 
 section{
     &.blue-section{
@@ -46,6 +46,37 @@ section{
         img{
             margin: 0 auto;
             display: flex;
+        }
+    }
+
+    &.options{
+        .list{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-top:1px solid #e8e8e8;
+            padding:25px 0;
+            font-size:17px;
+            width:100%;
+            color:$text-color;
+            font-weight:500;
+            font-family: 'Roboto', sans-serif;
+
+            i{
+                margin-right:15px;
+            }
+
+            p{
+                margin:0;
+                
+                span{
+                    display: block;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+
+            
         }
     }
 }

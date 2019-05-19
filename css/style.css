@@ -47,4 +47,37 @@ section.contacts img {
   display: -ms-flexbox;
   display: flex;
 }
+
+section.options .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-top: 1px solid #e8e8e8;
+  padding: 25px 0;
+  font-size: 17px;
+  width: 100%;
+  color: #424242;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+section.options .list i {
+  margin-right: 15px;
+}
+
+section.options .list p {
+  margin: 0;
+}
+
+section.options .list p span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
