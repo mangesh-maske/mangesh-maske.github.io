@@ -1,8 +1,8 @@
 {
     "short_name": "Google Pay",
     "name": "Google Pay",
-    "theme_color": "#1a73e8",
-    "background_color": "#1a73e8",
+    "theme_color": "#202124",
+    "background_color": "#202124",
     "display": "standalone",
     "icons": [
       {
